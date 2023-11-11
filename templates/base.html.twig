@@ -4,6 +4,29 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/bootstrap4/css/bootstrap.css ">
+            <link rel="stylesheet" href="css/bootstrap4/css/bootstrap-reboot.css">
+            <link rel="stylesheet" href="css/bootstrap4/css/bootstrap-grid.css">
+            <script src="https://kit.fontawesome.com/17733826fd.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="{{ asset('css/styles.css')}}">
+            
+            <script>
+                // Fonction qui ajuste la position de l'élément lors du défilement
+                function handleScroll() {
+                var element = document.getElementById('snowboarder');
+                var scrollValue = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // Déplacer l'élément de 0.5 pixel pour chaque pixel défilé
+                var moveUp = scrollValue * .5;
+                
+                // Appliquez la transformation à l'élément
+                element.style.transform = 'translateY(-' + moveUp + 'px)';
+                }
+                
+                // Écouter l'événement de défilement sur la fenêtre
+                window.addEventListener('scroll', handleScroll);
+            </script>
         {% block stylesheets %}
         {% endblock %}
 
