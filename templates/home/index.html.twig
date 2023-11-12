@@ -3,9 +3,27 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
+{% block stylesheets %}
+    <style>
+        .fakeBody {
+            background-image: url('{{ asset('/build/images/bg-big.png') }}');
+            display: block;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+{% endblock %}
+
+<div class="fakeBody" >
+
  <nav class="nav_style_design">
         <header>
-            <img class="logo" src="IMG/logo.gif" alt="">
+            <img class="logo" src="{{ asset('build/images/logo.gif') }}" alt="">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Tricks</a></li>
@@ -16,14 +34,14 @@
     </nav>
     <div class="main_title_container" id="snowboarder">
         <h1 class="title">Snowtricks, <span>your </span>own list !</h1>
-        <img src="img/snowtricks-user_03.png" alt="">
+        <img src="{{ asset('/build/img/snowtricks-user_03.png') }}" alt="">
     </div>
     <div class="container-full">
         <div class="container">
             <h1 class="title h1">Liste of tricks</h1>
             <div class="grid">
 
-                <div class="card" style="background-image:url('../img/test.png')">
+                <div class="card">
                     <div class="card_content">
                         <h4 class="card_content--title">
                             titre de l'article
@@ -204,4 +222,5 @@
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

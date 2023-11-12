@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Rough Battle';
+    src: url('RoughBattle.eot');
+    src: url('RoughBattle.eot?#iefix') format('embedded-opentype'),
+        url('RoughBattle.woff2') format('woff2'),
+        url('RoughBattle.woff') format('woff'),
+        url('RoughBattle.ttf') format('truetype'),
+        url('RoughBattle.svg#RoughBattle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

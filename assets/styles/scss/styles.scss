@@ -1,0 +1,253 @@
+// reset.css
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ 
+
+
+
+// SCSS
+
+
+@import "../fonts/punk/stylesheet.css";
+@import "../fonts/rough_battle/stylesheet.css";
+$red :  #d31030 ;
+
+.fakeBody{
+    font-family: 'Roboto', sans-serif;
+    nav.nav_style_design{
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: ''; 
+            display: inline-block; 
+            width: 100%;
+            height: 200px;
+            background-image: url(../../img/bg-blc.png ); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            position: absolute; 
+            top: 4rem;
+            left: 0;
+            z-index: 1;
+          }
+        header{
+            display: flex;
+            justify-content: space-between; 
+            height: 4em;
+            width: 1140px;
+            margin: 0px auto;
+            img.logo{
+                max-height: 15rem;
+                rotate: -18deg;
+                position: fixed;
+                filter: drop-shadow(0 0mm 2mm rgb(29, 29, 29));
+                z-index: 10;
+            }
+            ul{ 
+                display: flex;
+                white-space: nowrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                margin-left: 33rem;
+                position: absolute;
+                top: 2rem;
+                z-index: 5;
+                li{
+                    display: inline-block;
+                    margin-right: 10px;
+                    justify-content: space-between; 
+                    
+                    a{
+                        display: inline-block; 
+                        text-decoration: none; 
+                        font-family: 'Rough Battle';
+                        padding: 5px 10px; 
+                        color: #000; 
+                        font-size: 2rem;
+                        transform:rotate(-14deg);
+                        -webkit-transition: -webkit-transform .1s ease-in-out;
+                        -ms-transition: -ms-transform .1s ease-in-out;
+                        transition: transform .1s ease-in-out;  
+                        &:hover{
+                            font-family: 'Rough Battle';
+                            color: $red;                         ; 
+                            transform:rotate(10deg);
+                            -ms-transform:rotate(10deg);
+                            -webkit-transform:rotate(10deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_title_container{
+        position: absolute;
+        z-index: 3;
+        max-height: 10rem;
+        margin-left: 24rem;
+        position: fixed;
+        top: 4rem;
+        h1.title{
+            position: absolute;
+            top: 25vh;
+            left: 27vw;
+            width: 22rem;
+            font-family: "Rough Battle";
+            color: white;
+            font-size: 5rem;
+            text-shadow: black 1px 0 10px;
+            line-height: 3.5rem;
+            rotate: -7deg;
+            span{
+                color: $red;
+                font-size: 6rem; 
+            }
+        }
+    }
+    .container-full{
+        display: block;
+        width: 100vw;
+        background-color: white;
+        height: 100rem;
+        margin-top: 50rem;
+        position: relative;
+        z-index: 3;
+        .container{
+            &::before {
+                content: ''; 
+                display: inline-block; 
+                width: 100%;
+                height: 200px;
+                background-image: url(../../img/bg-blc.png ); 
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat;
+                position: absolute; 
+                top: -200px;
+                left: 0;
+                z-index: 1;
+                transform: scale(-1, -1);
+              }
+              .title{
+                font-family: 'Rough Battle';
+                font-size: 7rem;
+                position: absolute;
+                z-index: 10;
+                margin: -11rem auto 5rem 15rem;
+                rotate: -7deg;
+              }
+              .h1{
+                font-size: 7rem;
+                position: absolute;
+                z-index: 10;
+                margin: -11rem auto 5rem 15rem;
+                rotate: -7deg;
+              }
+        }
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            .card{
+                background-image: url(../../img/img.png);
+                background-size: cover;
+                width: 19%;
+                height: 15rem;
+                margin: 0.5%;
+                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+                border: none;
+                //padding: 1rem 1.5rem 2rem 1.5rem;
+                
+                .card_content{
+                    margin-top: 6rem;
+                    overflow: hidden;
+                    h4{
+                        position: relative; 
+                        font-family: 'Rough Battle';
+                        color: white;
+                        font-size: 1.5rem;
+                        z-index: 2;
+                        height: 9rem;
+                        top: 2rem;
+                        padding: 1rem;
+                        &::before{
+                            content: " ";
+                            display: block;
+                            background-color: #000;
+                            height: 100%;
+                            top: 0rem;
+                            width: 100%;
+                            position: absolute;
+                            z-index: -1;
+                            left: 0;
+                            background: rgb(255,255,255);
+                            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5998774509803921) 40%, rgba(0,0,0,1) 100%);
+                        }
+                    }
+                    .card_buttons_section{
+                        position: absolute;
+                        right: 5px;
+                        top: 13rem;
+                        z-index: 5;
+                        .modifier,
+                        .delet{
+                            background: none;
+                            border: none;
+                            i.fa-solid{
+                               color: white; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
