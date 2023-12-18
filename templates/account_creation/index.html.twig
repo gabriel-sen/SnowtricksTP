@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccountCreationController!{% endblock %}
+
+{% block body %}
+    <div class="fakeBody">
+    {{ include('components/nav.html.twig')}}
+        <div class="container-page container-page--interne">
+            <div class="container container-login-singinin">
+                    {{ form(accountCreationForm) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,66 @@
+.fakeBody{
+  position: relative;
+  background-image: url("/assets/img/background.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-top: -2rem;
+}
+.container-page{
+  position: relative; 
+  position: relative;
+  z-index: 4;
+  width: 100vw;
+  margin-top: 55rem; 
+  background-color: #fff;
+  height: 100%;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 230px;
+    background-image: url(../../../img/bgblc.png ); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: absolute; 
+    top: -14rem;
+    left: 0;
+    z-index: 1;
+    transform: rotate(3.142rad);
+  }
+  .wrapper{
+    background-color: #fff;
+    .grid{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  } 
+}
+.container-page--interne{
+  //margin-top: 53rem; 
+}
+.container-login-singinin{
+  width: 25rem !important;
+  position: absolute;
+  top: -24rem;
+  left: 50%;
+  z-index: 1;
+  background: #fff;
+  padding: 2rem !important;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 50px black ;
+}
+
+.main_title_container{
+  display: flex;
+  flex-direction: column;
+  //transform: translateY(-217px);
+  position: absolute;
+  z-index: 3;
+  max-height: 10rem;
+  margin-left: 24rem;
+  position: fixed;
+  top: 4rem;
+}

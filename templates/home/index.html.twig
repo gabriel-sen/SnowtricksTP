@@ -2,223 +2,27 @@
 
 {% block title %}Hello HomeController!{% endblock %}
 
-{% block body %}
 {% block stylesheets %}
-    <style>
-        .fakeBody {
-            background-image: url('{{ asset('/build/images/bg-big.png') }}');
-            display: block;
-            background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+<style>
+    .fakeBody {
+        /* Styles spécifiques */
+    }
+</style>
 {% endblock %}
 
-<div class="fakeBody" >
+{% block body %}
 
- <nav class="nav_style_design">
-        <header>
-            <img class="logo" src="{{ asset('build/images/logo.gif') }}" alt="">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Tricks</a></li>
-                <li><a href="">Sign in</a></li>
-                <li><a href="">Singin up</a></li>
-            </ul>
-        </header>
-    </nav>
-    <div class="main_title_container" id="snowboarder">
-        <h1 class="title">Snowtricks, <span>your </span>own list !</h1>
-        <img src="{{ asset('/build/img/snowtricks-user_03.png') }}" alt="">
-    </div>
-    <div class="container-full">
-        <div class="container">
-            <h1 class="title h1">Liste of tricks</h1>
+<div class="fakeBody">
+
+    {{ include('components/nav.html.twig')}}
+
+    <div class="container-page">
+        <div class="wrapper">
             <div class="grid">
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card_content">
-                        <h4 class="card_content--title">
-                            titre de l'article
-                        </h4>
-                        <div class="card_buttons_section">
-                            <button class="modifier"><i class="fa-solid fa-file-pen"></i></button>
-                            <button class="delet"><i class="fa-solid fa-trash-can"></i></button>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="title">List of Tricks</h2>
+                {% for i in 1..20 %}
+                    {{ include('components/card.html.twig')}}
+                {% endfor %}
             </div>
         </div>
     </div>

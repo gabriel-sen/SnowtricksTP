@@ -1,0 +1,52 @@
+.card{
+    background-image: url(../../../img/img.png);
+    background-size: cover;
+    width: 19%;
+    height: 15rem;
+    margin: 0.5%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    border: none;
+    //padding: 1rem 1.5rem 2rem 1.5rem;
+
+    .card_content{
+        margin-top: 6rem;
+        overflow: hidden;
+        h4{
+            position: relative; 
+            font-family: 'Rough Battle';
+            color: white;
+            font-size: 1.5rem;
+            z-index: 2;
+            height: 9rem;
+            top: 2rem;
+            padding: 1rem;
+            &::before{
+                content: " ";
+                display: block;
+                background-color: #000;
+                height: 100%;
+                top: 0rem;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5998774509803921) 40%, rgba(0,0,0,1) 100%);
+            }
+        }
+        .card_buttons_section{
+            position: absolute;
+            right: 5px;
+            top: 13rem;
+            z-index: 5;
+            .modifier,
+            .delet{
+                background: none;
+                border: none;
+                i.fa-solid{
+                color: white; 
+                }
+            }
+        }
+    }
+}

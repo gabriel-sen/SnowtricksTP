@@ -1,0 +1,22 @@
+
+h1.main-title{
+    position: absolute;
+    top: 25vh;
+    left: 27vw;
+    width: 22rem;
+    font-family: "Rough Battle";
+    color: white;
+    font-size: 5rem;
+    text-shadow: black 1px 0 10px;
+    line-height: 3.5rem;
+    rotate: -7deg;
+    span{
+        color: $red;
+        font-size: 6rem; 
+    }
+}
+h2.title{
+    font-family: "Rough Battle";
+    width: 100%;
+    text-align: center;
+}
